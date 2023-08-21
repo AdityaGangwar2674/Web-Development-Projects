@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz@10..48&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz@10..48&family=Libre+Baskerville&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Borel', cursive; */
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Libre Baskerville', serif;
+}
+
+:root {
+    --navbar-height: 56px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 70%;
+}
+
+#logo {
+    margin: 10px 20px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 10px 20px;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#navbar ul li {
+    font-family: 'Libre Baskerville', serif;
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    font-family: 'Libre Baskerville', serif;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('food-4k-1pf6px6ryqfjtnyr.jpg') no-repeat center center/cover;
+    height: 640px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: white;
+    text-align: c enter;
+    font-size: 1.5rem;
+}
+
+/* Services section */
+#services {
+    margin: 35px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 35px;
+    margin: 2px 35px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.services-container {
+    background-color: antiquewhite;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    height: 550px;
+}
+
+/* Clients Section  */
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: antiquewhite;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 30px;
+}
+
+#clients img {
+    padding: 0 30px;
+}
+
+#clients img {
+    height: 120px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: antiquewhite;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+/* Utitlity Classes */
+.h-primary {
+
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px auto;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
